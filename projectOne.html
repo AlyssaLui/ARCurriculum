@@ -12,47 +12,109 @@
 <body>
 
 	<!--Project Banner -->
-	<div class = "container-fluid header mx-auto">
+	<div class = "col-xs-12 col-md-11 mx-auto header">
 		Project One
 	</div>
 
 	<!--Project Components -->
-	<div class = "container-fluid">
+	<div class = "col-xs-12 col-md-10 mx-auto">
 		<div class = "row">
 			<!-- Potentially modifying this to be dynamic-->
 			<div class = "col procomponents">
 				<i class="fa fa-question" aria-hidden="true"></i>
+				<h5>Image Target</h5>
 				<p> An image target is... </p>
 			</div>
 			<div class = "col procomponents">
 				<i class="fa fa-question" aria-hidden="true"></i>
-				<p> An image target is... </p>
+				<h5>3D Model</h5>
+				<p> A 3D model is... </p>
 			</div>
 			<div class = "col procomponents">
 				<i class="fa fa-question" aria-hidden="true"></i>
-				<p> An image target is... </p>	
+				<h5>Experience</h5>
+				<p> The user will... </p>	
 			</div>
 		</div>
 	</div>
 .
-	<!-- Steps-->
+	<!-- Prework-->
 	<div class = "container-fluid prework">
-		<div class = "row">
-			<div class="col">
+		<h2>Prework</h2>
+		<hr width="30%">
+		<div class = "col-xs-12 col-md-10 col-lg-7 mx-auto">
+			<ul>
+				<li>
+					Download Unity. (Make sure that AR support is selected when you install the software.)
+				</li>
+				<li>
+					Download any 3D model you want to use for this project. 
+					<!-- Add link to example model -->
+				</li>
+				<li>
+					Have an image ready (digitally and printed) to use as your image target.
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<!-- Steps-->
+	<div class = "container camera-steps">
+		<h4>Add a Vuforia Camera</h4>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Augmented reality experiences created using Vuforia uses a specific AR camera object. It replaces the default Main Camera object.</p>.
 				<ul>
-					<li>
-						Download Unity. (Make sure that AR support is selected when you install the software.)
-					</li>
-					<li>
-						Download any 3D model you want to use for this project. 
-						<!-- Add link to example model -->
-					</li>
-					<li>
-						Have an image ready (digitally and printed) to use as your image target.
-					</li>
+					<li>Go to GameObject -> Vuforia -> AR Camera</li>
+					<li>Delete the default Main Camera</li>
 				</ul>
 			</div>
+			<div class="col-md-6" style="height:200px;border:2px solid #3993DD;" >
+				<!-- Insert Image Here-->
+			</div>
+		</div>	
+		<h4>Setting Up the Camera</h4>
+		<div class="row">
+			<div class="col-md-12">
+				<ul>
+					<li>In the Inspector Window, click "Open Vuforia Configuration"</li>
+				</ul>
+
+				<p>The camera requires an app license key from Vuforia to ... </p>
+			</div>	
 		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<h6>To get an App License Key:</h6>
+				<ul>
+					<li>Go to developer.vuforia.com</li>
+					<li>Create an account with Vuforia</li>
+					<li>Click the Develop Tab → “License Manager” --> Create a License Key</li>
+					<li>Copy your app license key that was generated and paste it into the box in the Inspector Window</li>
+				</ul>
+			</div>
+			<div class="col-md-6" style="height:200px;border:2px solid #3993DD;" >
+				<!-- Insert Image Here-->
+			</div>
+		</div>
+	</div>
+	<hr width="50%" >
+	<div class="container image-target-steps">
+		<div class="row">
+			<div class="col-md-6" style="height:200px;border:2px solid #3993DD;" >
+				<!-- Insert Image Here-->
+			</div>
+			<div class="col-md-6">
+				<h4>Create database with our image targets</h4>
+				<p>Image targets for the project need to be uploaded onto Vuforia's database in order for them to be detected by its AR Camera...</p>
+				<ul>
+					<li><input type="checkbox">Back on the Vuforia website, click the "Target Manager" tab (Located next to the "license Manager" tab</input></li>
+					<li><input type="checkbox">Add/Create a database for type:device</input></li>
+					<li><input type="checkbox">Add your image target file as a target</input></li>
+				</ul>
+			</div>
+
+		</div>	
 	</div>
 
 	<!-- Bootstrap Scripts -->
