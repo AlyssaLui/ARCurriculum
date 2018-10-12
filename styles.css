@@ -1,18 +1,53 @@
-@pink: #FFA5AB;
+@pink: #E0ACD5; /*(224, 172, 213, 0.5)*/
+@blue: #3993DD; /*(57, 147, 221, 0.5)*/
+@tan: #F4EBE8;  /*(244, 235, 232, 0.5)*/
+@tan1: #EEE2DF; /*(238, 226, 223, 0.5)*/
+@peach: #F7D1CD;/*(247, 209, 205, 0.5)*/
 
+*{
+	/*background-color: rgba(244, 235, 232, 0.5);*/
+}
 .header{
 	/*Font*/
 	text-align: center;
-	font-size: 2em;
+	font-size: 2.5em;
 
 	/*Layout*/
-	background-color: #ddd;
+	background-color: rgba(224, 172, 213, 0.3);
 	margin: 20px;
-	padding: 15px;
+	padding: 50px;
 	border-radius: 5px;
 }
 
-.prework{
-	background-color: @pink;
-	margin: 15px;
+.procomponents{
+	text-align: center;
 }
+
+.procomponents i{
+	font-size: 80px;
+	color:#F7D1CD;
+}
+
+.prework{
+	background-color: rgba(238, 226, 223, 0.3);
+	padding: 35px 35px 20px 55px;
+
+}
+
+.camera-steps{
+	padding: 35px;
+}
+
+.image-target-steps{
+	padding: 25px;
+}
+
+.image-target-steps ul li{
+	list-style-type: none;
+	line-height: 1.7em;
+}
+
+h2{
+	text-align: center;
+}
+
