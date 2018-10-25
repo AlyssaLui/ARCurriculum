@@ -17,29 +17,30 @@
 	</div>
 
 	<!--Project Components -->
-	<div class = "col-xs-12 col-md-10 mx-auto">
-		<div class = "row">
-			<!-- Potentially modifying this to be dynamic-->
-			<div class = "col procomponents">
-				<i class="fa fa-question" aria-hidden="true"></i>
-				<h5>Image Target</h5>
-				<p> An image target is... </p>
-			</div>
-			<div class = "col procomponents">
-				<i class="fa fa-question" aria-hidden="true"></i>
-				<h5>3D Model</h5>
-				<p> A 3D model is... </p>
-			</div>
-			<div class = "col procomponents">
-				<i class="fa fa-question" aria-hidden="true"></i>
-				<h5>Experience</h5>
-				<p> The user will... </p>	
+	<div class="container">
+		<div class = "col-xs-12 col-md-10 mx-auto">
+			<div class = "row">
+				<!-- Potentially modifying this to be dynamic-->
+				<div class = "col procomponents">
+					<i class="fa fa-question" aria-hidden="true"></i>
+					<h5>Image Target</h5>
+					<p> An image target is... </p>
+				</div>
+				<div class = "col procomponents">
+					<i class="fa fa-question" aria-hidden="true"></i>
+					<h5>3D Model</h5>
+					<p> A 3D model is... </p>
+				</div>
+				<div class = "col procomponents">
+					<i class="fa fa-question" aria-hidden="true"></i>
+					<h5>Experience</h5>
+					<p> The user will... </p>	
+				</div>
 			</div>
 		</div>
 	</div>
-.
 	<!-- Prework-->
-	<div class = "container-fluid prework">
+	<div class = "container prework">
 		<h2>Prework</h2>
 		<hr width="30%">
 		<div class = "col-xs-12 col-md-10 col-lg-7 mx-auto">
@@ -106,15 +107,61 @@
 			</div>
 			<div class="col-md-6">
 				<h4>Create database with our image targets</h4>
-				<p>Image targets for the project need to be uploaded onto Vuforia's database in order for them to be detected by its AR Camera...</p>
+				<p>Image targets will be what your camera will be detecting to trigger the experience. The camera can be directed at a digital version of the image on a screen or a physical printed version.</p>
 				<ul>
-					<li><input type="checkbox">Back on the Vuforia website, click the "Target Manager" tab (Located next to the "license Manager" tab</input></li>
-					<li><input type="checkbox">Add/Create a database for type:device</input></li>
-					<li><input type="checkbox">Add your image target file as a target</input></li>
+					<li><input type="checkbox">Go to GameObject -> Vuforia -> Image</li>
+					<li><input type="checkbox">Swap out the default image with your own image</li>
 				</ul>
 			</div>
-
 		</div>	
+	</div>
+
+	<!-- 3D Object -->
+	<div class="container 3D-steps">
+		<div class="row">
+			<div class="col-md-6" style="height:200px;border:2px solid #3993DD;" >
+				<!-- Insert Image Here-->
+			</div>
+			<div class="col-md-6">
+				<h4>Adding in your 3D model</h4>
+				<p>When the camera detect the image, it will trigger the experience, or 3D model to appear scaled and positioned relative to your image target.</p>
+				<ul>
+					<li><input type="checkbox">Import your 3D model by going to <br/>GameObject -> 3DObject</li>
+					<li><input type="checkbox">In the Hierarchy Panel, drag your 3D model on top of the Image Target to make it a child of the image</li>
+				</ul>
+				<p> Now your 3D model and image are connected and the program knows to trigger a specific 3D model when it detects a unique image. </p>
+			</div>
+		</div>	
+	</div>
+
+	<!-- Enable Vuforia AR-->
+	<hr width="50%">
+	<div class = "container enable-vuforia-ar">
+		<div class="row">
+			<div class="col-md-6">
+				<h4>Enable Vuforia Augmented Reality</h4>
+				<p>Make sure that the Vuforia Augmented Reality option is selected in the player settings</p>
+				<ul>
+					<li><input type="checkbox">Navigate to the Player Settings by going to File -> Build Settings -> Player Settings</li>
+					<li><input type="checkbox">Navigate to the bottom of the Inspector and expand XR settings</li>
+					<li><input type="checkbox">Check the box nect to Vuforia Augmented Reality</li>
+				</ul>
+			</div>
+			<div class="col-md-6" style="height:250px;border:2px solid #3993DD;" >
+				<!-- Insert Image Here-->
+			</div>
+		</div>
+	</div>
+
+	<!-- Wrap Up-->
+	<div class="container wrap-up">
+		<div class="col-lg mx-auto">
+			That's it! You're all done! Go and test your experience!
+		</div>
+	</div>
+
+	<div class="container common-bugs">
+		<!-- Common bugs developers might run into-->
 	</div>
 
 	<!-- Bootstrap Scripts -->

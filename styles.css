@@ -4,6 +4,21 @@
 @tan1: #EEE2DF; /*(238, 226, 223, 0.5)*/
 @peach: #F7D1CD;/*(247, 209, 205, 0.5)*/
 
+/*
+
+*/
+
+:root{
+	--red: #F16A70;
+	--green: #B1D877;
+	--blue: #8CDCDA;
+	--darkgrey: #4D4D4D;
+	--yellow: #FFD275;
+	--pink: #E4B1AB;
+	--peach: #F7D1CD;
+
+}
+
 *{
 	/*background-color: rgba(244, 235, 232, 0.5);*/
 }
@@ -13,7 +28,7 @@
 	font-size: 2.5em;
 
 	/*Layout*/
-	background-color: rgba(224, 172, 213, 0.3);
+	background-color: var(--blue);
 	margin: 20px;
 	padding: 50px;
 	border-radius: 5px;
@@ -25,11 +40,14 @@
 
 .procomponents i{
 	font-size: 80px;
-	color:#F7D1CD;
+	color: var(--green );
+	opacity: 0.7;
 }
 
 .prework{
-	background-color: rgba(238, 226, 223, 0.3);
+	border-style: solid;
+	border-color: var(--blue);
+	border-width: 5px;
 	padding: 35px 35px 20px 55px;
 
 }
@@ -42,7 +60,18 @@
 	padding: 25px;
 }
 
-.image-target-steps ul li{
+.wrap-up{
+	font-size: 30px;
+	text-align: center;
+	padding: 50px;
+	margin: 50px;
+
+	border-style: dashed;
+	border-color: var(--blue);
+	border-width: 5px;
+}
+
+ul li{
 	list-style-type: none;
 	line-height: 1.7em;
 }
@@ -51,3 +80,6 @@ h2{
 	text-align: center;
 }
 
+input{
+	margin: 5px;
+}
