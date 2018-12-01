@@ -1,0 +1,6 @@
+header{
+	background-image: url("headerImage.jpg");
+	height:500px;
+	background-size: cover;
+	opacity: 0.9;
+}
