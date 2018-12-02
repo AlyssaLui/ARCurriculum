@@ -3,4 +3,43 @@ header{
 	height:500px;
 	background-size: cover;
 	opacity: 0.9;
+
+	/*Text properties for itself and all children elements*/
+    text-align: center;
+}
+
+header h1{
+	padding-bottom: 120px;
+	font-size: 5em;
+}
+
+header p{
+	color: #fff;
+	font-size: 1.5em;
+}
+
+/*Services*/
+.services, .team{
+	padding: 50px;
+	text-align: center;
+}
+
+.services img{
+	width:200px;
+	display: block;
+	margin: auto;
+}
+
+.service-item{
+	padding:25px;
+}
+
+hr {
+	width: 30%;
+}
+
+footer{
+	background-color: #4D4D4D;
+	color:#fff;
+	padding: 50px
 }
